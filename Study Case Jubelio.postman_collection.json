@@ -1,0 +1,397 @@
+{
+	"info": {
+		"_postman_id": "5843c2f4-48bb-4fe3-8e0b-c040077e89bd",
+		"name": "Study Case Jubelio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25416212",
+		"_collection_link": "https://www.postman.com/supply-specialist-67423594/workspace/qa-jubelio-rakamin/collection/25416212-5843c2f4-48bb-4fe3-8e0b-c040077e89bd?action=share&creator=25416212&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Login 1",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "qa.rakamin.jubelio@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Jubelio123!",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.jubelio.com/login",
+					"protocol": "https",
+					"host": [
+						"api",
+						"jubelio",
+						"com"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login 2",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "qa.rakamin.jubelio@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Jubelio123!",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.jubelio.com/login",
+					"protocol": "https",
+					"host": [
+						"api",
+						"jubelio",
+						"com"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Product Prices 1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "pageSize",
+							"value": "20",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.jubelio.com/inventory/internal-price-list/",
+					"protocol": "https",
+					"host": [
+						"api",
+						"jubelio",
+						"com"
+					],
+					"path": [
+						"inventory",
+						"internal-price-list",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Product Prices 1 Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "pageSize",
+							"value": "201",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.jubelio.com/inventory/internal-price-list/",
+					"protocol": "https",
+					"host": [
+						"api",
+						"jubelio",
+						"com"
+					],
+					"path": [
+						"inventory",
+						"internal-price-list",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Image 1",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "uhf1lhjTv/16954b5f-679e-4bc6-9b3f-c10e54f34fe6.jpg"
+						},
+						{
+							"key": "name",
+							"value": "16954b5f-679e-4bc6-9b3f-c10e54f34fe6.jpg",
+							"type": "text"
+						},
+						{
+							"key": "uid",
+							"value": "image",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.jubelio.com/inventory/upload-image",
+					"protocol": "https",
+					"host": [
+						"api",
+						"jubelio",
+						"com"
+					],
+					"path": [
+						"inventory",
+						"upload-image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Image 2",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "uhf1lhjTv/16954b5f-679e-4bc6-9b3f-c10e54f34fe6.jpg"
+						},
+						{
+							"key": "name",
+							"value": "16954b5f-679e-4bc6-9b3f-c10e54f34fe6.jpg",
+							"type": "text"
+						},
+						{
+							"key": "uid",
+							"value": "image",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.jubelio.com/inventory/upload-image",
+					"protocol": "https",
+					"host": [
+						"api",
+						"jubelio",
+						"com"
+					],
+					"path": [
+						"inventory",
+						"upload-image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Items 1",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"ids\": [\r\n    1\r\n  ]\r\n}"
+				},
+				"url": {
+					"raw": "https://api.jubelio.com/inventory/items/",
+					"protocol": "https",
+					"host": [
+						"api",
+						"jubelio",
+						"com"
+					],
+					"path": [
+						"inventory",
+						"items",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Items 2",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"ids\": [\r\n    1\r\n  ]\r\n}"
+				},
+				"url": {
+					"raw": "https://api.jubelio.com/inventory/items/",
+					"protocol": "https",
+					"host": [
+						"api",
+						"jubelio",
+						"com"
+					],
+					"path": [
+						"inventory",
+						"items",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
